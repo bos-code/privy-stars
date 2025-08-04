@@ -1,15 +1,60 @@
+/* app.css */
+
 @import "tailwindcss";
+@plugin "daisyui";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+  /* Font variable only, no properties here */
+  --font-sans: "Outfit", "Raleway", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* Absolute Colors */
+  --white: #FFF;
+  --black: #000;
+
+  /* Orange Shades */
+  --orange-1: #FF8D4C;
+  --orange-2: #FF9E66;
+  --orange-3: #FFAE80;
+  --orange-4: #FFBE99;
+
+  /* Primary Colors */
+  --primary-1: #FFDECC;
+  --primary-2: #FFEFE5;
+  --primary-3: #FFF5F0;
+  --primary-4: #FFFCFA;
+
+  /* Grey Shades */
+  --grey-1: #191919;
+  --grey-2: #262626;
+  --grey-3: #333333;
+  --grey-4: #4C4C4D;
+
+  /* Dark Colors */
+  --dark-1: #59595A;
+  --dark-2: #656567;
+  --dark-3: #98989A;
+  --dark-4: #B3B3B3;
+
+  /* DaisyUI main theme colors */
+  --primary: var(--orange-1);
+  --primary-focus: var(--orange-2);
+  --secondary: var(--orange-3);
+  --accent: var(--orange-4);
+  --neutral: var(--grey-4);
+  --base-100: var(--primary-3);
+  --info: var(--grey-2);
+  --success: var(--primary-2);
+  --warning: var(--primary-1);
+  --error: #B33B3B;
 }
 
-html,
+/* Normal CSS outside the @theme block */
 body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+  font-family: var(--font-sans);
+  background-color: var(--base-100);
+  color: var(--info);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
