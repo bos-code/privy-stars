@@ -1,3 +1,4 @@
+import Header from "~/components/header";
 import type { Route } from "./+types/home";
 
 export function meta({}: Route.MetaArgs) {
@@ -8,5 +9,9 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <h1>hello world</h1>;
+  return (
+    <div className="flex flex-col ">
+      <Header />
+    </div>
+  );
 }

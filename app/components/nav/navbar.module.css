@@ -1,0 +1,9 @@
+li{
+    @apply list-none;
+}
+.navbar{
+    @apply flex justify-between items-center;
+}
+.navLinks{
+    @apply flex 
+}
