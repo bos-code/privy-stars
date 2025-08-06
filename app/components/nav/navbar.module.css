@@ -1,9 +1,12 @@
-li{
-    @apply list-none;
+
+@reference "tailwindcss";
+
+.navbar {
+  @apply flex items-center justify-between p-4  shadow-md;
 }
-.navbar{
-    @apply flex justify-between items-center;
+.logo{
+    @apply text-2xl font-bold;
 }
 .navLinks{
-    @apply flex 
+    @apply flex items-center justify-center n;
 }
