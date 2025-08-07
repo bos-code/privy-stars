@@ -1,10 +1,9 @@
 /* app.css */
-
 @import "tailwindcss";
-@plugin "daisyui" {
-  themes: lightstem --default, darkstem --prefersdark;
-}
 
+@plugin "daisyui" {
+  themes: lightstem --default;
+}
 /* ─── Lightstem Theme ───────────────────────────────────────────────────────── */
 @plugin "daisyui/theme" {
   name: "lightstem";
@@ -107,5 +106,5 @@
 
 /* ─── Global Styles ─────────────────────────────────────────────────────────── */
 body {
-  @apply font-sans bg-base-100 text-base-content m-0 p-0 px-13 py-3 min-h-screen;
+  @apply font-sans overflow-hidden bg-base-100 text-base-content m-0 p-0 px-4 md:px-5 lg:px-6 xl:px-8  2xl:px-13 py-3 min-h-screen;
 }

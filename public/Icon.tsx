@@ -3,8 +3,7 @@ import React from "react";
 export default function Icon() {
   return (
     <svg
-      width="31"
-      height="30"
+      className="w-4 h-4 2xl:w-7 2xl:h-7 ml-1"
       viewBox="0 0 31 30"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

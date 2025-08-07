@@ -2,11 +2,18 @@
 @reference "tailwindcss";
 
 .navbar {
-  @apply flex items-center justify-between p-4  shadow-md;
+  @apply flex items-center justify-between border-2 rounded-xl overflow-hidden shadow-lg ;
 }
 .logo{
-    @apply text-2xl font-bold;
+    @apply whitespace-nowrap text-base font-bold ;
 }
 .navLinks{
-    @apply flex items-center justify-center n;
+    @apply  items-center justify-center capitalize  ;
+}
+
+.navLink{
+    @apply whitespace-nowrap transition-colors duration-500 inline-block border-l-2;
+}
+.navlink{
+    @apply whitespace-nowrap capitalize transition-colors duration-500 inline-block ;
 }
