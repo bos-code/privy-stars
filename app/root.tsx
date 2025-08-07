@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
+import Header from './components/header';
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -34,7 +35,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <title>Privy Stars</title>
       </head>
       <body>
-        {children}
+        <Header />
+        <main className="px-o px-20 2xl:px32">{children}</main>
         <ScrollRestoration />
         <Scripts />
       </body>
