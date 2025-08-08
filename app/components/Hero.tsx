@@ -23,11 +23,11 @@ export default function Hero() {
           us as we embark on an exciting educational journey together!
         </p>
 
-        <div className="stats bg-success @apply shadow-[4px_4px_0px_1px_#ffbe99] border-2 border-[#262626] gap-[20px] mt-10 opacity-100 rounded-[10px] p-10 ">
+        <div className="stats bg-success @apply shadow-[4px_4px_0px_1px_#ffbe99] border-2 border-[#262626] mt-10 opacity-100 rounded-[10px] p-10 lg:p-5 ">
           <ul className=" flex flex-col gap-4 justify-center items-center lg:flex-row">
             <li className="flex flex-col  justify-center items-center">
               <p className="text-3xl font-bold ">+700</p>
-              <span>Students Enrolled</span>
+              <span className=" whitespace-normal">Students Enrolled</span>
             </li>
             <div className="divider bg-neutral lg:bg-transparent h-auto"></div>
             <li className="flex flex-col  justify-center items-center">

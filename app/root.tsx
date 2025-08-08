@@ -36,7 +36,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       </head>
       <body>
         <Header />
-        <main className="px-o px-20 2xl:px32">{children}</main>
+        <main className="px-0 lg:p-10 xl:px-20 2xl:px32">{children}</main>
         <ScrollRestoration />
         <Scripts />
       </body>

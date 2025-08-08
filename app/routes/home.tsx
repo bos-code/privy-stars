@@ -1,6 +1,7 @@
 import Header from "~/components/header";
 import type { Route } from "./+types/home";
 import Hero from '../components/Hero';
+import Benefit from '../components/Benefit.jsx';
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -10,5 +11,6 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home() {
-  return <div className="flex flex-col "><Hero /> </div>;
+  return <div className="flex flex-col "><Hero />
+  <Benefit/> </div>;
 }
