@@ -1,12 +1,15 @@
 import React from "react";
-import comp from "../../public/Image Container.png";
 
 export default function Hero() {
   return (
     <div className=" mt-12 mb-20 flex flex-col xl:gap-12 2xl:gap-16 lg:flex-row items-center justify-center">
       <figure className="heroImage flex-1/2">
         <picture>
-          <img src={comp} alt="Hero" className="w-full h-auto" />
+          <img
+            src="/Image Container.png"
+            alt="Hero"
+            className="w-full h-auto"
+          />
         </picture>
       </figure>
       <div className="heroText text-center flex-1/2 lg:text-left">
